@@ -89,7 +89,7 @@ Real Estate Analyser assists proptech companies with vizualisation techniques to
    ![Rent_Sale_hood](Images/pricing-info-by-neighborhood.png)<br/>
 3. Building an interactive neighborhood map and exploring the geospatial relationships in the data by using interactive visualizations with hvPlot and GeoViews. :<br/>
    ![Rent_Sale_interactive](Images/6-4-geoviews-plot.png)<br/>
-   [Play Voila Video to view the app in the browser](README.md)<br/>
+   [Play Voila video to interact with ETF Analyzer via browser](ETF_Analyzer.mp4)<br/>
    > Getting started<br/>
 
 - To use the Real Estate Analyser first clone the repository to your PC.<br/>
