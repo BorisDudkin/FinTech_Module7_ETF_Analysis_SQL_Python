@@ -1,0 +1,5 @@
+* 	 (HEAD -> main, origin/main, origin/HEAD) ETF Analyzer and README updated
+* 	 first trial to add video to README
+* 	 README updated
+* 	 ETF Analyzer and README initiated
+* 	 Initial commit

@@ -1,6 +1,6 @@
-# ETF Analyser with SQL and Python
+# ETF Analyzer with SQL and Python
 
-### Real Estate Analyser proides investors with data visualization techniques, including aggregation, interactive visualizations, and geospatial analysis, to find properties that are viable investment opportunities in the San Francisco market. This tool can be used to explore and detect potential real estate investment opportunities in any other locations too.
+### ETF Analyzer combines the analytical power of Python, Pandas, and Structured Query Language (SQL) to assist you in making informed investment decisions in single stocks or ETFs.
 
 ---
 
@@ -26,13 +26,22 @@
 
 _Prerequisites_
 
-1. Pandas is a Python package that provides fast, flexible, and expressive data structures designed to make working with large sets of data easy and intuitive.
+1. `Pandas` is a Python package that provides fast, flexible, and expressive data structures designed to make working with large sets of data easy and intuitive.
 
-- [pandas](https://github.com/pandas-dev/pandas) - For the documentation, installation guide and dependencies.
+   - [pandas](https://github.com/pandas-dev/pandas) - for the documentation, installation guide and dependencies.
 
-2. PyViz is a Python visualization package that provides a single platform for accessing multiple visualization libraries. Two of these libraries are hvPlot and GeoViews.<br/> The [hvPlot ](https://hvplot.holoviz.org/) and [GeoViews ](https://geoviews.org/) libraries are visualization libraries that are designed to work with Pandas DataFrames and that we can use to create interactive plots for our data.
+2. `PyViz` is a Python visualization package that provides a single platform for accessing multiple visualization libraries. One of these libraries is hvPlot. <br/>
 
-- [PyViz ](https://pyviz.org/) - For guidance on how to start visualization, interactive visualization, styles and layouts customazation.
+   - [PyViz ](https://pyviz.org/) - for guidance on how to start visualization, interactive visualization, styles and layouts customazation.
+   - [hvPlot ](https://hvplot.holoviz.org/) is a visualization library that is designed to work with Pandas DataFrames and that we can use to create interactive plots for our data.<br/>
+
+3. `SQLAlchemy` is an open-source SQL library for Python. It is designed to ease the communication between Python-based programs and databases"
+
+   - [SQLAlchemy ](https://www.sqlalchemy.org/) - for information on the library, its features and installation instructions.<br/>
+
+4. `Voilà` builds interactive web applications directly from our Jupyter notebooks.
+
+   - [Voilà ](https://voila.readthedocs.io/en/stable/) - to read more about deploying, installing and customizing<br/>
 
 ---
 
@@ -69,7 +78,32 @@ Confirm the installation of all the PyViz packages by running the following comm
 
 ```python
  conda list hvplot
- conda list geoviews
+```
+
+To install SQLAlchemy, in Terminal run:
+
+```python
+# PuPi
+pip install SQLAlchemy
+```
+
+Confirm the installation of the SQLAlchemy package by running the following commands in Terminal type:
+
+```python
+ conda list sqlalchemy
+```
+
+To install Voilà, in Terminal run:
+
+```python
+# PuPi
+pip install voila
+```
+
+Confirm the installation of the Voilà package by running the following commands in Terminal type:
+
+```python
+ conda list voila
 ```
 
 ---
@@ -78,29 +112,37 @@ Confirm the installation of all the PyViz packages by running the following comm
 
 > Application summary<br/>
 
-Real Estate Analyser assists proptech companies with vizualisation techniques to assess the availability of "buy-and-rent" properties in the selected locations (in our example San Francisco and its neighborhoods) by:
+ETF Analyzer assists investment advisors and indivifual investors, to interact with databases and perform sophsitcated financial analys.<br/>
+Furthermore, Voilà library transforms ETF Analyzer into interactive web application that nontechnical users without any coding experience can use.
 
-1. Analysing the trends in housing units over a selected time period in the selected location:<br/>
-   ![Housing_Units](Images/zoomed-housing-units-by-year.png)<br/>
+- The analyzis begings with the user getting information about the portfolio of stocks forming the ETF:<br/>
+  ![ETF](Images/ETF_table.PNG)<br/>
+- Next, a single stock's daily returns and cumulative returns are displayed and the trends are analyzed:<br/>
+  ![ETF](Images/PYPL_returns.png)<br/>
+  ![ETF](Images/PYPL_C_returns.png)<br/>
+- A zoom into top 10 PPYL's returns and the information on when the stock was traded above $200 is also provided:<br/>
+  ![ETF](Images/PYPL_highest.PNG)<br/>
+  ![ETF](Images/PPYL_200.PNG)<br/>
+- We procede wtih the ETF's cumulative returns analyzis:<br/>
+  ![ETF](Images/ETF_returns.png)<br/>
+- We finalyze with performance comparison of the sinle stock (PYPL) and the ETF:<br/>
+  ![ETF](Images/ETF_PPYL.png)<br/>
+- Voilà library is deployed to give web based interactive experience to the tool's users:<br/>
 
-2. Plotting and analysing the gross rent and sale price per square foot over the selected time period in the location of interest:<br/>
-   ![Rent_Sale](Images/avg-sale-px-sq-foot-gross-rent.png)<br/>
-   and further exploring the average sale price per square foot and rental income by neighborhood.:<br/>
-   ![Rent_Sale_hood](Images/pricing-info-by-neighborhood.png)<br/>
-3. Building an interactive neighborhood map and exploring the geospatial relationships in the data by using interactive visualizations with hvPlot and GeoViews. :<br/>
-   ![Rent_Sale_interactive](Images/6-4-geoviews-plot.png)<br/>
+  `Play Voilà demo video to review PYPL and ETF analyzes perfromed by the application<br/>
 
-   > Play Voila video to interact with ETF Analyzer via browser<br/>
+<video src=ETF_Analyzer.mp4 controls="controls" style="max-width: 730px;"></video>
 
-      <video src=ETF_Analyzer.mp4 controls="controls" style="max-width: 730px;">
-   </video>
+> Getting started<br/>
 
-   > Getting started<br/>
-
-- To use the Real Estate Analyser first clone the repository to your PC.<br/>
+- To use ETF Analyzer first clone the repository to your PC.<br/>
 - Open `Jupyter lab` as per the instructions in the [Installation Guide](#installation-guide) to run the application.<br/>
 
-  At the very end of the application you can find a summary and conclusion drawn based on the generated vizualisations. It can serve as a sample for your analysis.
+- Run Voilà in the Terminal: Voilà accepts a path to the notebook and then generates a web app with any visualizations or output that were generated in the Jupyter notebook. The code is simple:
+
+```python
+voila <relative-path-to-notebook>
+```
 
 ---
 
