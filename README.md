@@ -116,18 +116,19 @@ ETF Analyzer assists investment advisors and indivifual investors, to interact w
 Furthermore, Voilà library transforms ETF Analyzer into an interactive web application that nontechnical users without any coding experience can use.
 
 - The analyzis begings by informing the users about the portfolio of stocks that form the ETF:<br/>
-  ![ETF](Images/ETF_table.PNG)<br/>
+  ![ETF_table](Images/ETF_table.PNG)<br/>
 - Next, a single stock's daily returns and cumulative returns are displayed and the trends are analyzed:<br/>
-  ![ETF](Images/PYPL_returns.png)<br/>
-  ![ETF](Images/PYPL_C_returns.png)<br/>
+  ![ETF_returns](Images/PYPL_returns.png)<br/>
+  ![ETF_c_returns](Images/PYPL_C_returns.png)<br/>
 - A zoom into top 10 PPYL's returns and the information on when the stock was traded above $200 is also provided:<br/>
-  ![ETF](Images/PYPL_highest.PNG)<br/>
-  ![ETF](Images/PPYL_200.PNG)<br/>
+  ![ETF_top](Images/PYPL_highest.PNG)<br/>
+  ![ETF_200](Images/PPYL_200.PNG)<br/>
 - We procede wtih the ETF's cumulative returns analyzis:<br/>
-  ![ETF](Images/ETF_returns.png)<br/>
+  ![ETF_returns](Images/ETF_returns.png)<br/>
 - We finalyze with performance comparison between the sinle stock (PYPL) and the ETF:<br/>
-  ![ETF](Images/ETF_PPYL.png)<br/>
+  ![ETF_PPYL](Images/ETF_PPYL.png)<br/>
 - Voilà library is deployed to give web based interactive experience to the tool's users:<br/>
+  ![Voila](Images/voila.PNG)<br/>
 
   `Play Voilà demo video to review PYPL and ETF analyzes perfromed by the application`<br/>
 
