@@ -113,9 +113,9 @@ Confirm the installation of the Voilà package by running the following commands
 > Application summary<br/>
 
 ETF Analyzer assists investment advisors and indivifual investors, to interact with databases and perform sophsitcated financial analys.<br/>
-Furthermore, Voilà library transforms ETF Analyzer into interactive web application that nontechnical users without any coding experience can use.
+Furthermore, Voilà library transforms ETF Analyzer into an interactive web application that nontechnical users without any coding experience can use.
 
-- The analyzis begings with the user getting information about the portfolio of stocks forming the ETF:<br/>
+- The analyzis begings by informing the users about the portfolio of stocks that form the ETF:<br/>
   ![ETF](Images/ETF_table.PNG)<br/>
 - Next, a single stock's daily returns and cumulative returns are displayed and the trends are analyzed:<br/>
   ![ETF](Images/PYPL_returns.png)<br/>
@@ -125,11 +125,11 @@ Furthermore, Voilà library transforms ETF Analyzer into interactive web applica
   ![ETF](Images/PPYL_200.PNG)<br/>
 - We procede wtih the ETF's cumulative returns analyzis:<br/>
   ![ETF](Images/ETF_returns.png)<br/>
-- We finalyze with performance comparison of the sinle stock (PYPL) and the ETF:<br/>
+- We finalyze with performance comparison between the sinle stock (PYPL) and the ETF:<br/>
   ![ETF](Images/ETF_PPYL.png)<br/>
 - Voilà library is deployed to give web based interactive experience to the tool's users:<br/>
 
-  `Play Voilà demo video to review PYPL and ETF analyzes perfromed by the application<br/>
+  `Play Voilà demo video to review PYPL and ETF analyzes perfromed by the application`<br/>
 
 <video src=ETF_Analyzer.mp4 controls="controls" style="max-width: 730px;"></video>
 
